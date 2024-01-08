@@ -1,0 +1,564 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(14, 14, 14);
+}
+
+
+
+
+                /* header */
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo img{
+    height: 50px;
+    cursor: pointer;
+}
+
+.navigation{
+    display: flex;
+    gap: 50px;
+    font-size: 19px;
+}
+
+
+
+.navigation a:hover{
+    color: white;
+    transition: .7s;
+}
+
+.navigation a{
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+}
+
+.navigation .a{
+    color: white;
+}
+
+.icon i {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .7s;
+    display: none;
+}
+
+
+
+.menu{
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    transition: .7s;
+    animation-name: animation;
+    animation-duration: .5s;
+    display: none;
+}
+
+
+.menu-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    position: absolute;
+    top: 35px;
+    right: 25px;
+}
+
+.menu-icon i{
+    color: white;
+    font-size: 30px;
+}
+
+.menu-links a{
+    color: rgb(31, 31, 31);
+    font-size: 30px;
+    transition: .7s;
+}
+
+.menu-links .a{
+    color: white;
+}
+
+.show{
+    display: flex;
+}
+                /* section */
+
+
+.first-section{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    height: 80vh;
+}      
+
+.first-section-img img{
+    height: 700px;
+}
+
+.first-section-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.first-section-text h1{
+    color: white;
+    font-size: 80px;
+}
+
+.first-section-text h3{
+    color: white;
+    font-size: 30px;
+}
+
+.first-section-text p{
+    color: rgb(148, 148, 148);
+    line-height: 30px;
+}
+
+.first-section-text .button{
+    width: 300px;
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.first-section-text .button i{
+    color: white;
+    font-size: 30px;
+}
+
+.first-section-text .button:hover{
+    background-color: rgb(14, 16, 17);
+}
+
+.first-section-text .button h2{
+    color: white;
+}
+
+
+
+
+
+                                /* second section */
+
+
+
+            
+.title{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h1{
+    font-size: 120px;
+    color: rgb(41, 41, 41);
+    cursor: pointer;
+}
+
+.second-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.second-section-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card i{
+    color: white;
+}
+
+.card h3{
+    color: white;
+}
+
+.card p{
+    color: rgb(121, 121, 121);
+}
+
+.card1{
+    margin-left: 50px;
+}
+
+
+
+
+                    /* tird section */
+
+.tird-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.tird-section-text{
+    color: rgb(168, 168, 168);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.tird-section-text .button{
+    width: 137px;
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.tird-section-text .button:hover{
+    background-color: rgb(14, 16, 17);
+}
+
+.tird-section-text .button h2{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+
+                    /* music */
+
+.music{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin:  0 auto;
+    background-color: rgb(24, 25, 28);
+    border-radius: 10px;
+    padding: 50px 100px;
+    margin-bottom: 150px;
+}
+
+.music-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.music-text h1{
+    color: white;
+}
+
+.music-text p{
+    color: rgb(168, 168, 168);
+}
+
+.music-text .button{
+    width: 200px;
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.music-text .button i{
+    color: white;
+    font-size: 30px;
+}
+
+.music-text .button:hover{
+    background-color: rgb(14, 16, 17);
+}
+
+.music-text .button h2{
+    color: white;
+    font-size: 22px;
+}
+
+
+                /* products */
+
+.products .title{
+    line-height: 130px;
+}                
+
+.product{
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 150px;
+}
+
+.product-card{
+    background-color: rgb(24, 26, 28);
+    padding: 20px 60px;
+    border-radius: 8px;
+}
+
+.product-card img{
+    height: 150px;
+}
+
+.product-card h2{
+    color: white;
+}
+
+.product-card i{
+    color: white;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price h3{
+    color: rgb(163, 163, 163);
+}
+
+.price span i{
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(12, 13, 13);
+}
+
+
+
+
+
+                /* footer */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.footer-logo img{
+    height: 50px;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-text h2{
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-text p{
+    color: rgb(163, 163, 163);
+    cursor: pointer;
+}
+
+.footer-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(24, 26, 28);
+    height: 70px;
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.footer-input input{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 18px;
+    width: 200px;
+    color: white;
+}
+
+.footer-input button{
+    color: white;
+    background-color: rgb(9, 9, 9);
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 120px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@keyframes animation{
+    from{transform: translateY(-300px)}
+    to{transform: translateY(0)}
+}
+
+
+@media (max-width: 580px){
+
+    .first-section-text{
+        gap: 20px;
+    }
+
+    .first-section-text p{
+        line-height: 20px;
+    }
+
+    .title h1{
+        font-size: 80px;
+        line-height: 70px;
+    }
+
+    .second-section-img img{
+        height: 350px;
+    }
+
+    .second-section-text{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .music-img img{
+        height: 250px;
+    }
+}
+
+
+@media (max-width: 850px){
+
+    .navigation{
+        display: none;
+    }
+
+    .icon i{
+        display: flex;
+    }
+
+    .first-section{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 500px;
+        height: 100vh;
+    }
+
+    .first-section-text{
+        align-items: center;
+        text-align: center;
+    }
+
+    .second-section{
+        flex-direction: column;
+    }
+
+    .second-section-text{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card1{
+        margin-top: 50px;
+    }
+
+    .tird-section{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .tird-section-text{
+        align-items: center;
+        text-align: center;
+    }
+
+    .music{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .music-text{
+        align-items: center;
+        text-align: center;
+    }
+
+    .product{
+        justify-content: center;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+}
